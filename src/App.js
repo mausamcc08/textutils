@@ -40,12 +40,10 @@ function App() {
   return (
     <>
     <Router>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
+    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}  />
     <Alert alert={alert}/>
     <div className="container my-3">
     <Switch>
-    {/* /users --> Component 1
-        /users/home --> Component 2 */}
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
